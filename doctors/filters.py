@@ -1,0 +1,1 @@
+from django_filters import rest_framework as drf_filterfrom doctors.models import Doctorclass DoctorsFilter(drf_filter.FilterSet):    specialisation = drf_filter.CharFilter(field_name='specialisation', lookup_expr='icontains')    class Meta:        model = Doctor        fields = [            'specialisation'        ]

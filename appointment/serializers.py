@@ -1,0 +1,1 @@
+from rest_framework import serializersfrom appointment.models import Appointmentclass AppointmentsSerializer(serializers.ModelSerializer):    class Meta:        model = Appointment        fields = (            'doctor', 'location',            'first_name', 'last_name',            'date', 'start', 'end',        )
