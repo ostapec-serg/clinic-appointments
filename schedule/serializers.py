@@ -1,1 +1,14 @@
-from rest_framework import serializersfrom schedule.models import Scheduleclass ScheduleSerializer(serializers.ModelSerializer):    class Meta:        model = Schedule        fields = (            'doctor', 'date',            'day_name', 'start',            'end', 'lunch_start',            'lunch_end'        )
+from rest_framework import serializers
+
+from schedule.models import Schedule
+
+
+class ScheduleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Schedule
+        fields = (
+            'doctor', 'date',
+            'day_name', 'start',
+            'end', 'lunch_start',
+            'lunch_end'
+        )

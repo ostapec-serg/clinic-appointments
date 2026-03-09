@@ -1,1 +1,7 @@
-SECRET_KEY = ''DATABASES = {    'default': {    }}
+SECRET_KEY = ''
+
+DATABASES = {
+    'default': {
+
+    }
+}
